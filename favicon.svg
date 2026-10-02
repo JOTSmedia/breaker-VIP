@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="6" fill="#030814"/>
-  <circle cx="16" cy="16" r="12" fill="#ffd700"/>
-  <circle cx="16" cy="16" r="10.2" fill="#071734"/>
-  <circle cx="16" cy="16" r="4.7" fill="#f7f9fc"/>
-  <text x="16" y="16.6" text-anchor="middle" dominant-baseline="central" font-family="Georgia, 'Times New Roman', serif" font-size="7.4" font-weight="700" fill="#030814">8</text>
-</svg>
