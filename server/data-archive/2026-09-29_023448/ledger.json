@@ -1,0 +1,397 @@
+[
+  {
+    "id": "f8fe766a-5e68-4c4f-be03-d9d697edc07d",
+    "memberId": "aaa6e30d-cc86-4207-b161-94d0bbf821e6",
+    "type": "join",
+    "points": 0,
+    "label": "Joined — card BB-00001",
+    "detail": null,
+    "at": "2026-08-15T04:35:43.724Z"
+  },
+  {
+    "id": "d5f7c12e-1ad4-4afb-88b0-a9c84f3cf1f3",
+    "memberId": "347e7729-a5d1-4621-af8d-23dadd0fd701",
+    "type": "join",
+    "points": 0,
+    "label": "Joined — card BB-00002",
+    "detail": null,
+    "at": "2026-08-15T04:38:02.760Z"
+  },
+  {
+    "id": "99525488-d5be-40e8-ad67-416f60b3ecea",
+    "memberId": "347e7729-a5d1-4621-af8d-23dadd0fd701",
+    "type": "earn",
+    "points": 15,
+    "label": "3h table time",
+    "detail": {
+      "amount": 0,
+      "tableHours": 3,
+      "breakdown": [
+        {
+          "label": "3h table time",
+          "points": 15
+        }
+      ],
+      "note": null
+    },
+    "at": "2026-08-15T04:38:43.184Z"
+  },
+  {
+    "id": "bd77e215-4ed4-4aab-a13e-d2fdf2781dd4",
+    "memberId": "347e7729-a5d1-4621-af8d-23dadd0fd701",
+    "type": "earn",
+    "points": 165,
+    "label": "$150.00 spend + 3h table time",
+    "detail": {
+      "amount": 150,
+      "tableHours": 3,
+      "breakdown": [
+        {
+          "label": "$150.00 spend",
+          "points": 150
+        },
+        {
+          "label": "3h table time",
+          "points": 15
+        }
+      ],
+      "note": null
+    },
+    "at": "2026-08-15T04:38:54.302Z"
+  },
+  {
+    "id": "2e48e44b-e21b-4df3-af24-d1a16dbdd053",
+    "memberId": "347e7729-a5d1-4621-af8d-23dadd0fd701",
+    "type": "redeem",
+    "points": -100,
+    "label": "Draft Beer or Well Drink",
+    "detail": {
+      "rewardId": "draft",
+      "viaCode": "21F30C",
+      "by": "manager"
+    },
+    "at": "2026-08-15T04:38:54.305Z"
+  },
+  {
+    "id": "ec4496ab-3547-450f-83f5-e270f31963d0",
+    "memberId": "54fc2d63-e659-4899-94a6-88c1c7eb654a",
+    "type": "join",
+    "points": 0,
+    "label": "Joined — card BB-00003",
+    "detail": null,
+    "at": "2026-08-15T04:45:31.850Z"
+  },
+  {
+    "id": "b142fc6b-5662-4580-b4fa-97ea79ced64c",
+    "memberId": "54fc2d63-e659-4899-94a6-88c1c7eb654a",
+    "type": "earn",
+    "points": 65,
+    "label": "Toast Bar Tab #CHK-7041",
+    "detail": {
+      "pos": "toast",
+      "checkId": "CHK-7041",
+      "spend": 65,
+      "items": [
+        {
+          "name": "Breaker IPA",
+          "qty": 2,
+          "price": 16
+        },
+        {
+          "name": "Nachos",
+          "qty": 1,
+          "price": 15
+        },
+        {
+          "name": "Whiskey",
+          "qty": 2,
+          "price": 34
+        }
+      ],
+      "serverName": "Alex R",
+      "breakdown": [
+        {
+          "label": "$65.00 spend",
+          "points": 65
+        }
+      ]
+    },
+    "at": "2026-08-15T04:45:31.853Z"
+  },
+  {
+    "id": "6862b42b-b34a-466a-aadf-8f7d32727e0c",
+    "memberId": "54fc2d63-e659-4899-94a6-88c1c7eb654a",
+    "type": "earn",
+    "points": 80,
+    "label": "CueT Table #4 (4h)",
+    "detail": {
+      "pos": "cuet",
+      "sessionId": "SES-3301",
+      "tableNo": "4",
+      "tableHours": 4,
+      "rate": 15,
+      "grossAmount": 60,
+      "discountPct": 0,
+      "discountAmount": 0,
+      "spend": 60,
+      "cashier": "Dave M",
+      "breakdown": [
+        {
+          "label": "$60.00 spend",
+          "points": 60
+        },
+        {
+          "label": "4h table time",
+          "points": 20
+        }
+      ]
+    },
+    "at": "2026-08-15T04:45:31.855Z"
+  },
+  {
+    "id": "f68a1b03-c405-45f3-93a1-4ac05bbdc84f",
+    "memberId": "54fc2d63-e659-4899-94a6-88c1c7eb654a",
+    "type": "earn",
+    "points": 110,
+    "label": "CueT Table #4 (5.5h)",
+    "detail": {
+      "pos": "cuet",
+      "sessionId": "SES-3302",
+      "tableNo": "4",
+      "tableHours": 5.5,
+      "rate": 15,
+      "grossAmount": 82.5,
+      "discountPct": 0,
+      "discountAmount": 0,
+      "spend": 82.5,
+      "cashier": "Dave M",
+      "breakdown": [
+        {
+          "label": "$82.50 spend",
+          "points": 82
+        },
+        {
+          "label": "5.5h table time",
+          "points": 28
+        }
+      ]
+    },
+    "at": "2026-08-15T04:45:31.856Z"
+  },
+  {
+    "id": "5b04add9-73bd-48b4-9217-ae087b2d6b5f",
+    "memberId": "9ba46c4e-7761-43bb-ad78-34370f462046",
+    "type": "join",
+    "points": 0,
+    "label": "Joined — card BB-00004",
+    "detail": null,
+    "at": "2026-08-15T04:47:06.256Z"
+  },
+  {
+    "id": "4021ad48-6af7-4758-a268-6a1a6e123f8e",
+    "memberId": "9ba46c4e-7761-43bb-ad78-34370f462046",
+    "type": "earn",
+    "points": 52,
+    "label": "Toast Bar Tab #CHK-8891",
+    "detail": {
+      "pos": "toast",
+      "checkId": "CHK-8891",
+      "spend": 52,
+      "items": [
+        {
+          "name": "Guinness",
+          "qty": 2,
+          "price": 16
+        },
+        {
+          "name": "Wings",
+          "qty": 1,
+          "price": 18
+        },
+        {
+          "name": "Shot",
+          "qty": 2,
+          "price": 18
+        }
+      ],
+      "serverName": "Chloe B",
+      "breakdown": [
+        {
+          "label": "$52.00 spend",
+          "points": 52
+        }
+      ]
+    },
+    "at": "2026-08-15T04:47:06.257Z"
+  },
+  {
+    "id": "b27d7ac0-25d3-46ac-8bd2-4f95255f5876",
+    "memberId": "9ba46c4e-7761-43bb-ad78-34370f462046",
+    "type": "earn",
+    "points": 70,
+    "label": "CueT Table #2 (3.5h)",
+    "detail": {
+      "pos": "cuet",
+      "sessionId": "SES-7701",
+      "tableNo": "2",
+      "tableHours": 3.5,
+      "rate": 15,
+      "grossAmount": 52.5,
+      "discountPct": 0,
+      "discountAmount": 0,
+      "spend": 52.5,
+      "cashier": "Mike R",
+      "breakdown": [
+        {
+          "label": "$52.50 spend",
+          "points": 52
+        },
+        {
+          "label": "3.5h table time",
+          "points": 18
+        }
+      ]
+    },
+    "at": "2026-08-15T04:47:06.260Z"
+  },
+  {
+    "id": "51c18e9f-df04-4ec5-a3f3-eb84407853ef",
+    "memberId": "9ba46c4e-7761-43bb-ad78-34370f462046",
+    "type": "earn",
+    "points": 120,
+    "label": "CueT Table #2 (6h)",
+    "detail": {
+      "pos": "cuet",
+      "sessionId": "SES-7702",
+      "tableNo": "2",
+      "tableHours": 6,
+      "rate": 15,
+      "grossAmount": 90,
+      "discountPct": 0,
+      "discountAmount": 0,
+      "spend": 90,
+      "cashier": "Mike R",
+      "breakdown": [
+        {
+          "label": "$90.00 spend",
+          "points": 90
+        },
+        {
+          "label": "6h table time",
+          "points": 30
+        }
+      ]
+    },
+    "at": "2026-08-15T04:47:06.261Z"
+  },
+  {
+    "id": "ac1d7d55-62d9-4240-b733-d273bbb030b2",
+    "memberId": "9ba46c4e-7761-43bb-ad78-34370f462046",
+    "type": "earn",
+    "points": 40,
+    "label": "Toast Bar Tab #CHK-8490",
+    "detail": {
+      "pos": "toast",
+      "checkId": "CHK-8490",
+      "spend": 40,
+      "serverName": "Test Bartender",
+      "breakdown": [
+        {
+          "label": "$40.00 spend",
+          "points": 40
+        }
+      ]
+    },
+    "at": "2026-08-15T04:47:06.262Z"
+  },
+  {
+    "id": "4b085dcd-3bc1-4703-8ad2-4a324b793e48",
+    "memberId": "2ccb7be3-14b4-4cbd-a671-c52eaea134f2",
+    "type": "join",
+    "points": 0,
+    "label": "Joined — card BB-00005",
+    "detail": null,
+    "at": "2026-08-15T05:18:42.962Z"
+  },
+  {
+    "id": "a235e06e-f378-462e-a3fe-6539dc625a10",
+    "memberId": "2ccb7be3-14b4-4cbd-a671-c52eaea134f2",
+    "type": "earn",
+    "points": 30,
+    "label": "Toast Bar Tab #CHK-9911",
+    "detail": {
+      "pos": "toast",
+      "checkId": "CHK-9911",
+      "spend": 30,
+      "items": [],
+      "serverName": "Toast Register",
+      "breakdown": [
+        {
+          "label": "$30.00 spend",
+          "points": 30
+        }
+      ]
+    },
+    "at": "2026-08-15T05:18:42.991Z"
+  },
+  {
+    "id": "20575be9-cc25-4d53-aaf1-9f010212dcf0",
+    "memberId": "2ccb7be3-14b4-4cbd-a671-c52eaea134f2",
+    "type": "earn",
+    "points": 90,
+    "label": "CueT Table #3 (4.5h)",
+    "detail": {
+      "pos": "cuet",
+      "sessionId": "SES-8822",
+      "tableNo": "3",
+      "tableHours": 4.5,
+      "rate": 15,
+      "grossAmount": 67.5,
+      "discountPct": 0,
+      "discountAmount": 0,
+      "spend": 67.5,
+      "cashier": "CueT Terminal",
+      "breakdown": [
+        {
+          "label": "$67.50 spend",
+          "points": 67
+        },
+        {
+          "label": "4.5h table time",
+          "points": 23
+        }
+      ]
+    },
+    "at": "2026-08-15T05:18:42.993Z"
+  },
+  {
+    "id": "d9bea3b5-61a4-4fa1-827d-cec055b7d1c9",
+    "memberId": "2ccb7be3-14b4-4cbd-a671-c52eaea134f2",
+    "type": "earn",
+    "points": 110,
+    "label": "CueT Table #5 (5.5h)",
+    "detail": {
+      "pos": "cuet",
+      "sessionId": "SES-1100",
+      "tableNo": "5",
+      "tableHours": 5.5,
+      "rate": 15,
+      "grossAmount": 82.5,
+      "discountPct": 0,
+      "discountAmount": 0,
+      "spend": 82.5,
+      "cashier": "CueT Terminal",
+      "breakdown": [
+        {
+          "label": "$82.50 spend",
+          "points": 82
+        },
+        {
+          "label": "5.5h table time",
+          "points": 28
+        }
+      ]
+    },
+    "at": "2026-08-15T05:35:04.308Z"
+  }
+]

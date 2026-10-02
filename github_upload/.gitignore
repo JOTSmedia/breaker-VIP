@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# secrets / local config (never commit)
+.env
+server/.env
+server/.env.*
+!server/.env.example
+
+# the live database (members, points, ledger) and its archives
+server/data/
+server/data-archive/
+data/
+*.tmp
+
+# generated output
+generated_cards/
+
+# data backups (npm run backup) — contain member details, never commit
+backups/
+
+# logs & OS junk
+*.log
+npm-debug.log*
+.DS_Store
+
+# first-run admin password handed to the owner (read it, store it, delete it)
+server/ADMIN_PASSWORD_FIRST_RUN.txt

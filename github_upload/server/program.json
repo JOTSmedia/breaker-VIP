@@ -1,0 +1,140 @@
+{
+  "_comment": [
+    "PREFERRED PLAYER CARD — the whole rewards program lives in this one file.",
+    "Edit, restart the server, done. Nothing here is hard-coded anywhere else.",
+    "",
+    "POS INTEGRATIONS:",
+    "  Billiards POS: CueT POS (Table rentals, hourly rates, player time tracking)",
+    "  Bar POS: Toast (bar & food checks)",
+    "",
+    "EARNING (approved Sept 2026):",
+    "  earn.perTableHour 5 means 1 hour on the table = 5 points.",
+    "  earn.perDollar 0.2 means bar & food tabs earn 1 point per $5, rounded down per check.",
+    "    Change this ONE number to change the bar rate (0 or delete it = bar tabs earn nothing).",
+    "    Table rental dollars never earn dollar points — table time earns per hour only.",
+    "  earn.perTipDollar 0.2 means TIPS earn 1 point per $5 tipped, rounded down per check, on their own",
+    "    (separate from perDollar; the tip is never counted inside the bar subtotal). 0 = tips earn nothing.",
+    "  earn.tablePunchCycle 11 means bank 10 hours — the 11th table hour is FREE.",
+    "",
+    "WHY 1 POINT PER $5 ON BAR TABS:",
+    "  Table time at the default $15/hr earns 5 points = 1 point per $3.",
+    "  The only reward is free table time, worth about $15 per 250 points (~6 cents a point).",
+    "  So bar spend gives back ~1.2% versus ~2% for table time: table time stays the main",
+    "  driver, and every redemption costs the bar only idle table time, never product.",
+    "",
+    "REWARDS: free table time ONLY. Every reward must have \"type\": \"table\" — the server",
+    "  refuses to start otherwise, and never redeems anything else.",
+    "",
+    "REDEMPTION CODES (free table time):",
+    "  redeemCodes.posExpiryHours 24: a code printed by the POS / register lasts this long.",
+    "  redeemCodes.memberExpiryMinutes 15: a code a member makes in the app lasts this long.",
+    "  redeemCodes.maxOpenPosCodes 2: most register / 'Code for later' codes one member can have open.",
+    "    (App codes: one at a time — a new one replaces the old one.)",
+    "  Making a code HOLDS its points at once (available = balance - held). They come off when the",
+    "  Front Desk redeems the code, and are released if it expires or a manager cancels it.",
+    "  Each code works once.",
+    "",
+    "TIER OVERRIDES:",
+    "  tierOverride.expiryMonths 12: a tier a manager sets by hand lasts this many months, then the",
+    "  member goes back to the tier their lifetime points earn. Setting it again restarts the clock.",
+    "",
+    "TIPS vs SERVICE CHARGES:",
+    "  Only a real tip (Toast 'tip' / 'tipAmount') earns tip points. An automatic service charge or",
+    "  auto-gratuity ('gratuity', 'serviceCharge', 'autoGratuity' ...) earns nothing; it is noted in the POS log.",
+    "",
+    "OFF ON PURPOSE: no birthday bonus, weekday multiplier or visit streak. Leave",
+    "  birthdayBonus, multiplier/multiplierDays and visitStreakCount/visitStreakBonus unset."
+  ],
+
+  "brand": {
+    "name": "Preferred Player Card",
+    "short": "Preferred Player",
+    "tagline": "Members Club",
+    "cardPrefix": "BB"
+  },
+
+  "pos": {
+    "cuet": {
+      "enabled": true,
+      "name": "CueT POS (Billiards)",
+      "description": "Table rental sessions, table hours, and tier discounts",
+      "earnPerTableHour": 5,
+      "tablePunchCycle": 11,
+      "punchRewardName": "In The 11th Hour — Free Table Time"
+    }
+  },
+
+  "earn": {
+    "perTableHour": 5,
+    "perDollar": 0.2,
+    "perTipDollar": 0.2,
+    "tablePunchCycle": 11,
+    "tablePunchRewardName": "In The 11th Hour — Free Table Time"
+  },
+
+  "redeemCodes": {
+    "posExpiryHours": 24,
+    "memberExpiryMinutes": 15,
+    "maxOpenPosCodes": 2
+  },
+
+  "tierOverride": {
+    "expiryMonths": 12
+  },
+
+  "_tierNote": [
+    "Four levels, named for the card colour, lowest to highest:",
+    "  BLUE   where everyone starts",
+    "  SILVER 500 lifetime points  — 5% off table time",
+    "  GOLD   2,000 lifetime points — 10% off table time + 1 comped table hour/month",
+    "  BLACK  5,000 lifetime points — 20% off table time + 1 comped table hour/week",
+    "Tier is driven by LIFETIME points, so redeeming a reward can never demote anyone."
+  ],
+  "tiers": [
+    { "key": "blue",   "name": "Blue",   "min": 0,    "tableDiscount": 0,
+      "perks": [
+        "Earn 5 points per table hour, 1 point per $5 on bar tabs and 1 point per $5 tipped",
+        "In The 11th Hour free table time tracker",
+        "Points never expire"
+      ]
+    },
+    { "key": "silver", "name": "Silver", "min": 500,  "tableDiscount": 5,
+      "perks": [
+        "5% off table time at the Front Desk",
+        "In The 11th Hour free table time tracker",
+        "Early access to event sign-ups"
+      ]
+    },
+    { "key": "gold",   "name": "Gold",   "min": 2000, "tableDiscount": 10,
+      "perks": [
+        "10% off table time at the Front Desk",
+        "One comped table hour per month — just ask at the Front Desk",
+        "Priority on the wait list",
+        "In The 11th Hour free table time tracker"
+      ]
+    },
+    { "key": "black",  "name": "Black",  "min": 5000, "tableDiscount": 20, "earnBoost": 1.5,
+      "perks": [
+        "20% off table time at the Front Desk",
+        "One comped table hour every week — just ask at the Front Desk",
+        "Reserved rack on request",
+        "1.5× points on everything you earn",
+        "First access to every event"
+      ]
+    }
+  ],
+
+  "rewards": [
+    { "id": "table1", "type": "table", "cost": 250,  "name": "1 Hour of Free Table Time",  "note": "Ask at the Front Desk to redeem" },
+    { "id": "table2", "type": "table", "cost": 450,  "name": "2 Hours of Free Table Time", "note": "Ask at the Front Desk to redeem" },
+    { "id": "table3", "type": "table", "cost": 625,  "name": "3 Hours of Free Table Time", "note": "Ask at the Front Desk to redeem" }
+  ],
+
+  "terms": [
+    "Free to join. Ask at the Front Desk for your Preferred Player Card.",
+    "Earn 5 points per table hour, 1 point per $5 on bar tabs (before tax and tip) and 1 point per $5 tipped (each rounded down per check).",
+    "In The 11th Hour punch card: bank 10 paid table hours and your 11th hour is 100% free. Redeem at the Front Desk.",
+    "Rewards are free table time only; no bar or food redemptions. No cash value. Non-transferable.",
+    "Must be 21+ with valid ID. Breaker Billiards reserves the right to modify or end this program at any time."
+  ]
+}

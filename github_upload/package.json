@@ -1,0 +1,22 @@
+{
+  "name": "breaker-rewards",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Breaker Billiards Preferred Player Card: points, rewards, staff console and card printing. Runs on your own computer or any Node host.",
+  "type": "module",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "scripts": {
+    "start": "node server/server.js",
+    "setup": "node scripts/setup.mjs",
+    "set-password": "node scripts/setup.mjs --reset-password",
+    "cards": "node scripts/make-cards.mjs",
+    "backup": "node scripts/backup.mjs",
+    "restore": "node scripts/backup.mjs --restore",
+    "test": "node --test test/rewards.test.mjs"
+  },
+  "dependencies": {
+    "pdfkit": "^0.19.1"
+  }
+}
